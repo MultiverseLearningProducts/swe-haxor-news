@@ -1,0 +1,69 @@
+:root {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background-color: whitesmoke;
+}
+
+header {
+  height: 40px;
+  background-color: hsl(39, 100%, 60%);
+  display: flex;
+  gap: .5rem;
+  padding: 0.5rem;
+  align-content: center;
+  align-items: center;
+}
+header .hacker {
+  width: 30px;
+}
+header h1 {
+  display: inline;
+  font-size: 1.2rem;
+}
+header .login {
+  margin-left: auto;
+}
+
+article {
+  background-color: hsl(0, 0%, 80%);
+  padding: .5rem;
+  display: flex;
+  gap: .5rem;
+}
+article h2 {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+article .num {
+  flex: none;
+}
+
+.url, .title, .triangle, .login, .link, .sitename {
+  cursor: pointer;
+}
+
+main {
+  overflow-y: auto;
+  padding: 1em;
+}
+
+.posts {
+  width: 100%;
+  max-width: 60rem;
+  margin: auto;
+}
+
+footer {
+  height: 40px;
+  background-color: aqua;
+}
